@@ -147,12 +147,13 @@ h2 {
     text-align: left;
     margin-bottom: 0;
     font-weight: bolder;
-    margin-left: 5%;
+    margin-left: 3%;
+    padding-top: 5%;
 }
 
 .offer h2 {
     color: rgba(39, 86, 163, 255);
-    padding-top: 2%;
+    padding-top: 5%;
 }
 
 .offer {
@@ -184,6 +185,23 @@ h2 {
 .about-company {
     background-image: url(../images/about_company_background.png);
     /*     background-position: center top;*/
+}
+
+.about-company-segment {
+    padding-left: 3%;
+    font-family: Roboto-Bold, Roboto-Regular, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 16pt;
+    color: rgba(246, 246, 246, 255);
+    text-align: left;
+    font-family: Roboto;
+}
+
+.about-company-segment .title {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 44.98981pt;
+    color: #2756a3;
+    text-align: left;
 }
 
 .contact {
@@ -221,4 +239,53 @@ h2 {
     .navbar-right > li > a {
         font-size: 9pt;
     }
+}
+
+
+/***********************
+  OUTLINE BUTTONS
+************************/
+
+.btn.outline {
+    background: none;
+    padding: 12px 22px;
+}
+
+.btn-primary.outline {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-primary.outline:hover,
+.btn-primary.outline:focus,
+.btn-primary.outline:active,
+.btn-primary.outline.active,
+.open > .dropdown-toggle.btn-primary {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-primary.outline:active,
+.btn-primary.outline.active {
+    border-color: rgba(246, 246, 246, 255);
+    color: rgba(246, 246, 246, 255);
+    box-shadow: none;
+}
+
+
+/***********************
+  CUSTOM BTN VALUES
+************************/
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    border-radius: 0;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    outline: 0 none;
 }
