@@ -150,6 +150,10 @@
     padding-top: 5%;
 }
 
+.offer-content > .row {
+    margin: 5% 8% 5% 8%;
+}
+
 h2 {
     font-family: 'Encode Sans Bold', sans-serif;
     font-weight: 700;
@@ -208,7 +212,7 @@ h2 {
 }
 
 .about-company-segment {
-    padding-left: 8%;
+    padding-left: 7%;
     font-family: Roboto;
     font-size: 12pt;
     color: rgba(246, 246, 246, 255);
@@ -216,12 +220,15 @@ h2 {
     font-family: Roboto;
 }
 
-.about-company-segment .title {
+.title {
     font-family: 'Encode Sans Bold', sans-serif;
     font-weight: 700;
     font-size: 34pt;
-    color: #2756a3;
     text-align: left;
+}
+
+.about-company-segment .title {
+    color: #2756a3;
 }
 
 .contact {
@@ -229,8 +236,17 @@ h2 {
     /*     background-position: center top;*/
 }
 
-.segmenet .row {
-    margin: 5% 8% 5% 8%;
+.contact-segment {
+    padding-left: 7%;
+    font-family: Roboto;
+    font-size: 12pt;
+    color: rgba(246, 246, 246, 255);
+    text-align: left;
+    font-family: Roboto;
+}
+
+.contact-segment .title {
+    color: #222222;
 }
 
 .menu-content {
@@ -309,4 +325,8 @@ h2 {
 .btn:active:focus,
 .btn.active:focus {
     outline: 0 none;
+}
+
+.form-control {
+    border-radius: 0;
 }
