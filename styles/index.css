@@ -330,3 +330,7 @@ h2 {
 .form-control {
     border-radius: 0;
 }
+
+textarea {
+    resize: none;
+}
