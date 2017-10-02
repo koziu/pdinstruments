@@ -96,7 +96,7 @@
                     <button type="button" class="btn btn-primary btn-lg outline">Dowiedz się więcej</button>
                 </div>
             </div>
-            <div class="segmenet contact col-xs-12 col-sm-12 col-md-12 ">
+            <div class="segmenet contact col-xs-12 col-sm-12 col-md-12">
                 <br>
                 <br>
                 <h2>KONTAKT</h2> <img class="blue-line " src="images/white-line.png ">
@@ -139,6 +139,48 @@
                                     <br>Serwis</p><a href="tel:+48 32 230 30 28">+48 32 230 30 28 wew: 30</a>
                                 <br><a href="mailto:pfilipek@pdinstruments.com">pfilipek@pdinstruments.com</a> </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="segment foot col-xs-12 col-sm-12 col-md-12">
+                <div class="foot-segment row">
+                    <div class="col-md-1 social-media">D</div>
+                    <div class="col-md-2 social-media col-md-offset-1">U</div>
+                    <div class="col-md-2 social-media col-md-offset-1 ">P</div>
+                    <div class="col-md-2 social-media">A</div>
+                    <div class="col-md-2 map">
+                        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                        <div style='overflow:hidden;height:185px;width:100%;'>
+                            <div id='gmap_canvas' style='height:185px;width::100%;'></div>
+                            <style>
+                                #gmap_canvas img {
+                                    max-width: none!important;
+                                    background: none!important
+                                }
+                            </style>
+                        </div>
+                        <script type='text/javascript'>
+                            function init_map() {
+                                var myOptions = {
+                                    zoom: 16
+                                    , center: new google.maps.LatLng(50.454234, 18.524001999999996)
+                                    , mapTypeId: google.maps.MapTypeId.ROADMAP
+                                };
+                                map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                                marker = new google.maps.Marker({
+                                    map: map
+                                    , position: new google.maps.LatLng(50.454234, 18.524001999999996)
+                                });
+                                //                            infowindow = new google.maps.InfoWindow({
+                                //                                content: '<strong>Pdinstruments</strong><br>ul. Tarnogórska 6, Toszek, Polska<br>'
+                                //                            });
+                                google.maps.event.addListener(marker, 'click', function () {
+                                    infowindow.open(map, marker);
+                                });
+                                infowindow.open(map, marker);
+                            }
+                            google.maps.event.addDomListener(window, 'load', init_map);
+                        </script>
                     </div>
                 </div>
             </div>

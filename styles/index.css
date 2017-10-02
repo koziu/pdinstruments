@@ -271,6 +271,17 @@ h2 {
     margin: 20px;
 }
 
+.foot {
+    background: #222222;
+    padding-left: 7%;
+    padding-top: 2%;
+    color: #ffffff;
+}
+
+.foot-segment > .row {
+    margin: 5% 8% 5% 8%;
+}
+
 @media screen and (min-width: 760px) and (max-width: 1080px) {
     .menu-content {
         margin: 1px;
@@ -294,6 +305,7 @@ h2 {
         font-size: 9pt;
     }
 }
+
 
 /*
 .line-separator {
@@ -358,4 +370,9 @@ h2 {
 
 textarea {
     resize: none;
+}
+
+.map {
+    margin-left: 3%;
+    margin-right: 3%;
 }
