@@ -146,10 +146,10 @@
                 <div class="foot-segment row">
                     <div class="col-md-1 social-media">
                         <a href="https://www.facebook.com/PDInstruments/"> <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i> </a> <a href="https://www.linkedin.com/company/7034423/"><i class="fa fa-linkedin-square fa-2x" aria-hidden="false"></i></a></div>
-                    <div class="col-md-2 social-media col-md-offset-1">U</div>
+                    <div class="col-md-2 social-media">U</div>
                     <div class="col-md-2 social-media col-md-offset-1 ">P</div>
                     <div class="col-md-2 social-media">A</div>
-                    <div class="col-md-2 map">
+                    <div class="col-md-3 map">
                         <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
                         <div style='overflow:hidden;height:185px;width:100%;'>
                             <div id='gmap_canvas' style='height:185px;width::100%;'></div>
@@ -172,9 +172,9 @@
                                     map: map
                                     , position: new google.maps.LatLng(50.454234, 18.524001999999996)
                                 });
-                                //                            infowindow = new google.maps.InfoWindow({
-                                //                                content: '<strong>Pdinstruments</strong><br>ul. Tarnogórska 6, Toszek, Polska<br>'
-                                //                            });
+                                infowindow = new google.maps.InfoWindow({
+                                    content: '<strong>PD Instruments</strong><br>ul. Tarnogórska 6, Toszek, Polska<br>'
+                                });
                                 google.maps.event.addListener(marker, 'click', function () {
                                     infowindow.open(map, marker);
                                 });
