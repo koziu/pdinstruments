@@ -249,6 +249,24 @@ h2 {
     color: #222222;
 }
 
+.info-content {
+    padding: 10%;
+    font-size: 10pt;
+}
+
+.info-content > a {
+    color: white;
+}
+
+.info-content-title {
+    padding-bottom: 1%;
+    font-size: 12pt;
+}
+
+.info-content-title > b {
+    font-size: 13pt;
+}
+
 .menu-content {
     margin: 20px;
 }
@@ -276,6 +294,13 @@ h2 {
         font-size: 9pt;
     }
 }
+
+/*
+.line-separator {
+    height: 1px;
+    background: #717171;
+    border-bottom: 1px solid #313030;
+}*/
 
 
 /***********************
