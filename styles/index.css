@@ -18,9 +18,9 @@
     background-color: transparent;
 }
 
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
     background: none;
 }
 
@@ -104,9 +104,9 @@
     opacity: 1;
 }
 
-@media (min-width: 768px) {
-    .navbar>.container .navbar-brand,
-    .navbar>.container-fluid .navbar-brand {
+@media (min-width: 767px) {
+    .navbar > .container .navbar-brand,
+    .navbar > .container-fluid .navbar-brand {
         margin-left: -15px;
         height: 100%;
     }
@@ -120,14 +120,6 @@
         text-align: center;
     }
 }
-
-@media (max-width: 768px) {
-    .languages {
-        padding-top: 0;
-        padding-right: 0;
-    }
-}
-
 
 /* CONTENT*/
 
@@ -171,7 +163,6 @@ h2 {
 
 .offer {
     background-image: url(../images/offer_background.png);
-    /*    background-position: center bottom;*/
 }
 
 .offer-content-segment {
@@ -208,7 +199,6 @@ h2 {
 .about-company {
     background-image: url(../images/about_company_background.png);
     padding-top: 10%;
-    /*     background-position: center top;*/
 }
 
 .about-company-segment {
@@ -233,7 +223,6 @@ h2 {
 
 .contact {
     background-image: url(../images/contact_background.png);
-    /*     background-position: center top;*/
 }
 
 .contact-segment {
@@ -250,7 +239,7 @@ h2 {
 }
 
 .info-content {
-    padding: 10%;
+    padding: 4% 4% 4% 3%;
     font-size: 10pt;
 }
 
@@ -292,7 +281,7 @@ h2 {
     margin: 10px;
 }
 
-@media screen and (min-width: 760px) and (max-width: 1080px) {
+@media screen and (min-width: 767px) and (max-width: 1080px) {
     .menu-content {
         margin: 1px;
     }
@@ -304,16 +293,31 @@ h2 {
     }
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 767px) {
     .menu-content {
         margin: 1px;
     }
     .offer h2 {
-        margin-top: 50px;
+        margin-top: 90px;
     }
-    .navbar-right > li > a {
-        font-size: 9pt;
+
+    .languages {
+        padding-top: 50px;
+        padding-right: 0;
     }
+
+    .navbar-header,
+    .navbar-brand {
+        min-height: 90px;
+    }
+    .navbar-right > li {
+        font-size: 20pt;
+        ;
+    }
+    .info-content {
+        text-align: center;
+    }
+
 }
 
 
@@ -323,7 +327,6 @@ h2 {
     background: #717171;
     border-bottom: 1px solid #313030;
 }*/
-
 
 /***********************
   OUTLINE BUTTONS
