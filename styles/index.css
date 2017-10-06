@@ -320,6 +320,22 @@ h2 {
 
 }
 
+@media screen and (max-width: 991px) {
+
+    .offer {
+        background-image: url(../images/offer_background.png);
+    }
+
+    .about-company {
+        background-image: url(../images/about_company_background.png);
+        padding-top: 10%;
+    }
+
+    .contact {
+        background-image: url(../images/contact_background.png);
+    }
+}
+
 
 /*
 .line-separator {
